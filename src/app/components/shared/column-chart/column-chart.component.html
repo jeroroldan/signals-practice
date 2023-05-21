@@ -1,0 +1,19 @@
+
+<ng-container
+  *ngIf="chartOptions.series
+    && chartOptions.plotOptions
+    && chartOptions.chart
+    && chartOptions.yaxis
+    && chartOptions.title
+    && chartOptions.xaxis
+    && chartOptions.dataLabels
+    && chartOptions.fill"
+>
+  <div id="chart">
+    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+      [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis"
+      [fill]="chartOptions.fill" [title]="chartOptions.title"></apx-chart>
+  </div>
+</ng-container>
+
+
